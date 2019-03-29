@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en-us">
 
@@ -10,19 +10,73 @@
   <script src="https://code.jquery.com/jquery.js"></script>
 
 
-  <!--  Moment JS --> -->
+  <!--  Moment JS -->
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-  
+
+  <!-- Bootstrap Javascript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- CSS and Bootstrap -->
   <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/style.css">
-  
-  
+
+
 </head>
+
 <body>
-  
-  
-  
-  
-  <script type="text/javascript" href="./assets/cbear.js"> </script>
+
+  <div id="container">
+    <div class="jumbotron" id="header">
+      <h1 class="display-4" id="headerTitle">Circus Bear</h1>
+      <p>Brought to you by FirstRow Productions</p>
+    </div>
+
+    <div class="row">
+      <form class="col-md-5">
+        <p>We start by populating Bike Incidents based on your location.
+
+          Want to check out another city / state? Enter the details below for a new search.
+        </p>
+        <div class="form-group">
+          <label for="text">State</label>
+          <input type="text" class="form-control" id="stateEntr" placeholder="Enter State to Search">
+        </div>
+        <div class="form-group">
+          <label for="text">City</label>
+          <input type="text" class="form-control" id="cityEntr" placeholder="Enter State to Search">
+        </div>
+         <div class="form-group">
+          <label for="exampleFormControlSelect1">Type of Incident</label>
+          <select class="form-control" id="bikeIncidPull">
+            <option>Bike Accidents</option>
+            <option>Bike Thefts</option>
+            <option>Hazards</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <div class="col-md-1"></div>
+
+
+
+      <div class="col-md-6" id="mapArea">Here's the Map Area</div>
+
+
+    </div>
+
+    <script type="text/javascript" href="./assets/cbear.js"> </script>
 </body>
+
 </html>
