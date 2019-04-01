@@ -6,14 +6,42 @@ function initMap() {
     }
     // new map
     var map = new google.maps.Map(document.getElementById('map'), options);
-    
+    infoWindow = new google.maps.InfoWindow;
+    // prompt user for location
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location Found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+        }, function () {
+            handleLocationError(true, infoWindow, map.getCenter());
+        });
+    } else {
+        //  Browser doesn't support Geolocation
+        handleLocationError(false , infoWindow, map.getCenter());
+    }
+
+    function handleLocationError(BrowserHasGeoLocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(BrowserHasGeoLocation ?
+                                'Error: The Geolocation service failed.' :
+                                'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+    }
+
     // listen for click on map
-    google.maps.event.addListener(map, 'click',
-    function(event){
-        // add marker
-        addMarker({coords:event.latLng});
-    });
-    
+    // google.maps.event.addListener(map, 'click',
+    // function(event){
+    //     // add marker
+    //     addMarker({coords:event.latLng});
+    // });
+
 
     // array of markers
     var markers = [
@@ -32,7 +60,7 @@ function initMap() {
     ];
 
     // loop through markers
-    for (var i = 0; i < markers.length; i++ ){
+    for (var i = 0; i < markers.length; i++) {
         addMarker(markers[i]);
     }
 
