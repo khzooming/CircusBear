@@ -39,7 +39,10 @@
     font-size: 25px;
     color: white;
 }
-
+#map {
+    height: 400px;
+    width: 100%; 
+}
 
 #parentFooter {
     text-align: center;
