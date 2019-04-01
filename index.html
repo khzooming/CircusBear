@@ -41,22 +41,19 @@
 
   <div id="container">
     <div class="jumbotron border border-primary" id="header">
-      <h1 class="display-4" id="headerTitle">Circus Bear</h1>
-      <p id="frontRow">Brought to you by <span id="logo">FirstRow Productions</span</p> </div> <!-- A row containing
-            both the search criteria and map area -->
+      <h1 class="display-4" id="headerTitle">PureBred Head</h1>
+      <p id="headerDescrip">Save your  NOGGIN  and your  RIDE<span id="logo"></span</p> </div> 
+      
+        <!-- A row containing both the search criteria and map area -->
           <div class="row">
             <form class="col-md-5 border border-primary" id="textEntry">
-              <p>We start by populating Bike Incidents based on your location.</p>
+              <p class="descrip">We start by populating Bike Incidents based on your location.</p>
               <hr>
               </hr>
 
-              <p>Want to check out another city / state? Enter the details below for a new search.</p>
+              <p class="descrip">Want to check out another city?  Enter the details below for a new search.</p>
 
               <!-- Search Criteria form -->
-              <div class="form-group">
-                <label for="text">State</label>
-                <input type="text" class="form-control" id="stateEntr" placeholder="Enter State to Search">
-              </div>
               <div class="form-group">
                 <label for="text">City</label>
                 <input type="text" class="form-control" id="cityEntr" placeholder="Enter State to Search">
@@ -64,13 +61,14 @@
               <div class="form-group">
                 <label for="exampleFormControlSelect1">Type of Incident</label>
                 <select class="form-control" id="bikeIncidPull">
-                  <option>Bike Accidents</option>
-                  <option>Bike Thefts</option>
+                  <option>Accidents</option>
+                  <option>Thefts</option>
                   <option>Hazards</option>
                 </select>
               </div>
 
               <button type="submit" class="btn btn-primary">Submit</button>
+              <br></br>
             </form>
 
             <div class="col-md-1" id="tableSpace"></div>
@@ -81,45 +79,46 @@
           </div>
     </div>
 
-    <!-- This is where I was trying to get an image to repeat inside a div.. never worked, but I like the background image more. -->
-  <!-- <div id="container">
-      <div class="row col-md-12" id="bearPic"><span>
-        <img src="./assets/images/bearBike_image - flipped.jpg"></img> -->
-        <!-- <img src="./assets/images/bearBike_image_right.jpg"></img>
-        </span>
-      </div>
-  </div>  --> 
-
   <!-- Footer section -->
   <footer class="bd-footer text-muted">
-    <div class="container-fluid p-3 p-md-5">
+    <div class="container-fluid p-0.5 p-md-0.5" id="footContainer">
 
       <!-- Links to bike info sites -->
-      <div class="row" id="parentFooter">
+      <div class="row mx-auto" id="parentFooter">
         <div id="footerText">Check out these recommended sites for bike tips, safety, and more.</div>
       </div>
       <div class="row" id="footerLinks">
-        <div class=col-md-3>
+
+        <div class=col-md-2>
           <ul><a href="https://www.traillink.com/" target="_blank">Trail Link</a></ul>
         </div>
-
-        <div class=col-md-3>
+        
+        <div class=col-md-2>
           <ul><a href="https://www.bicycling.com/" target="_blank">Bicycling.com</a></ul>
         </div>
-
-        <div class=col-md-3>
+        
+        <div class=col-md-2>
           <ul><a href="https://peopleforbikes.org/" target="_blank">People For Bikes</a></ul>
         </div>
-
-        <div class=col-md-3>
+        
+        <div class=col-md-2>
           <ul><a href="https://www.singletracks.com/" target="_blank">Single Tracks</a></ul>
         </div>
-        <div class="row" id="parentFooter">
-          <div id="footerText">Designed and built with care by us.</div>
+        
+        <div class=col-md-2>
+            <ul><a href="https://www.ilovebicycling.com/" target="_blank">i love bicycling</a></ul>
+
+        </div>
+      
+        <div class=col-md-2>
+            <ul><a href="https://www.nsc.org/home-safety/tools-resources/seasonal-safety/summer/bicycles" target="_blank">Nat'l Safety Council</a></ul>
+        </div>
+
+        <div class="row mx-auto" id="parentFooter">
+          <div id="footerLowText">Designed and built with care by &copy FrontRow Productions.</div>
         </div>
 
       </div>
-    </div>
     </div>
     </footer>
     <script src="assets/cbear.js"></script>
