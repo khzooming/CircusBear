@@ -43,81 +43,87 @@
   <div id="container">
     <div class="jumbotron border border-primary" id="header">
       <h1 class="display-4" id="headerTitle">Circus Bear</h1>
-      <p id="frontRow">Brought to you by <span id="logo">FirstRow Productions</span</p> </div> <div class="row">
-        <form class="col-md-5 border border-primary" id="textEntry">
-          <p>We start by populating Bike Incidents based on your location.</p>
-          <hr></hr>
-          
-          <p>Want to check out another city / state? Enter the details below for a new search.</p>
-          
-          
-          <div class="form-group">
-            <label for="text">State</label>
-            <input type="text" class="form-control" id="stateEntr" placeholder="Enter State to Search">
+      <p id="frontRow">Brought to you by <span id="logo">FirstRow Productions</span</p> </div> <!-- A row containing
+            both the search criteria and map area -->
+          <div class="row">
+            <form class="col-md-5 border border-primary" id="textEntry">
+              <p>We start by populating Bike Incidents based on your location.</p>
+              <hr>
+              </hr>
+
+              <p>Want to check out another city / state? Enter the details below for a new search.</p>
+
+              <!-- Search Criteria form -->
+              <div class="form-group">
+                <label for="text">State</label>
+                <input type="text" class="form-control" id="stateEntr" placeholder="Enter State to Search">
+              </div>
+              <div class="form-group">
+                <label for="text">City</label>
+                <input type="text" class="form-control" id="cityEntr" placeholder="Enter State to Search">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Type of Incident</label>
+                <select class="form-control" id="bikeIncidPull">
+                  <option>Bike Accidents</option>
+                  <option>Bike Thefts</option>
+                  <option>Hazards</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <div class="col-md-1" id="tableSpace"></div>
+
+            <!-- Here's the map area -->
+            <div class="col-md-6 border border-primary" id="mapArea">Here's the Map Area</div>
+
           </div>
-          <div class="form-group">
-            <label for="text">City</label>
-            <input type="text" class="form-control" id="cityEntr" placeholder="Enter State to Search">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Type of Incident</label>
-            <select class="form-control" id="bikeIncidPull">
-              <option>Bike Accidents</option>
-              <option>Bike Thefts</option>
-              <option>Hazards</option>
-            </select>
-          </div>
-          
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        
-        <div class="col-md-1" id="tableSpace"></div>
-        
-        
-        
-        <div class="col-md-6 border border-primary" id="mapArea">Here's the Map Area</div>
-        
-        
+    </div>
+
+    <!-- This is where I was trying to get an image to repeat inside a div.. never worked, but I like the background image more. -->
+  <!-- <div id="container">
+      <div class="row col-md-12" id="bearPic"><span>
+        <img src="./assets/images/bearBike_image - flipped.jpg"></img> -->
+        <!-- <img src="./assets/images/bearBike_image_right.jpg"></img>
+        </span>
+      </div>
+  </div>  --> 
+
+  <!-- Footer section -->
+  <footer class="bd-footer text-muted">
+    <div class="container-fluid p-3 p-md-5">
+
+      <!-- Links to bike info sites -->
+      <div class="row" id="parentFooter">
+        <div id="footerText">Check out these recommended sites for bike tips, safety, and more.</div>
+      </div>
+      <div class="row" id="footerLinks">
+        <div class=col-md-3>
+          <ul><a href="https://www.traillink.com/">Trail Link</a></ul>
+        </div>
+
+        <div class=col-md-3>
+          <ul><a href="https://www.bicycling.com/">Bicycling.com</a></ul>
+        </div>
+
+        <div class=col-md-3>
+          <ul><a href="https://peopleforbikes.org/">People For Bikes</a></ul>
+        </div>
+
+        <div class=col-md-3>
+          <ul><a href="https://www.singletracks.com/">Single Tracks</a></ul>
+        </div>
+        <div class="row" id="parentFooter">
+          <div id="footerText">Designed and built with care by us.</div>
+        </div>
+
       </div>
     </div>
-    
-    <div class="row" id="bearPic"><span>
-        <img src="./assets/images/bearBike_image - flipped.jpg"></img>
-        <img src="./assets/images/bearBike_image_right.jpg"></img>
-      </span></div>
+    </div>
+  </footer>
 
-        <footer class="bd-footer text-muted">
-      <div class="container-fluid p-3 p-md-5">
-                  
-          <!-- footer with links to bike info sites -->
-          <div class="row" id="parentFooter">
-            <div id="footerText">Check out these recommended sites for bike tips, safety, and more.</div>
-          </div>
-          <div class="row" id="footerLinks">
-            <div class=col-md-3>
-              <ul><a href="{{ site.repo }}">GitHub</a></ul>
-            </div>
-            
-            <div class=col-md-3>
-              <ul><a href="https://twitter.com/getbootstrap">Twitter</a></ul>
-            </div>
-            
-            <div class=col-md-3>
-              <ul><a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/">Examples</a></ul>
-            </div>
-            
-            <div class=col-md-3>
-              <ul><a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/about/overview/">About</a></ul>
-            </div>
-            <div class="row" id="parentFooter">
-              <div id="footerText">Designed and built with care by us.</div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </footer>
-    
   <script type="text/javascript" href="./assets/cbear.js"> </script>
 </body>
 

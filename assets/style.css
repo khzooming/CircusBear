@@ -13,25 +13,33 @@
     height: 130px;
     padding-top: 20px;
     padding-bottom: 20px;
+    background: rgba(201, 175, 84, 0.4);
 }
 
+#textEntry {
+    background: rgba(201, 175, 84, 0.4);
+    color: white;
+    font-size: 30px;
+}
+
+#headerTitle {
+    color: white;
+    font-family: 'Monoton', cursive;
+}
 
 #frontRow {
     font-family: 'Monoton', cursive;
     font-size: 10px;
+    text-align: right;
+    color: white;
 }
 
 #logo {
     font-family: 'Monoton', cursive;
-    font-size: 20px;
+    font-size: 25px;
+    color: white;
 }
 
-#bearPic {
-    height: 50px;
-    width: 50px;
-    background-repeat: repeat-y;
-    z-index: 1;
-}
 
 #parentFooter {
     text-align: center;
@@ -44,10 +52,10 @@
     z-index: 2;
 }
 
-/* #footerPics {
-    background-image: src="./images/bearBike_image_right.jpg";
-    width: 200px;
-} */
+body {
+    background: url('./images/bike_sillouette_city2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
 
 
 /* font-family: 'Sniglet', cursive;
@@ -59,3 +67,12 @@ font-family: 'Shadows Into Light', cursive;
 font-family: 'Iceberg', cursive;
 font-family: 'Monoton', cursive;
 font-family: 'Indie Flower', cursive; */
+
+/* #bearPic {
+    height: 5%;
+    width: 5%;
+    background-repeat: repeat-x;
+    z-index: 1;
+} */
+
+
