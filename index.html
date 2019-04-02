@@ -41,27 +41,26 @@
 
   <div id="container">
     <div class="jumbotron border border-primary" id="header">
-      <h1 class="display-4" id="headerTitle">PureBred Head</h1>
-      <p id="headerDescrip">Save your  NOGGIN, AND and your ride <span id="logo"></span</p> </div> 
-        <!-- A row containing both the search criteria and map area -->
+      <h1 class="display-4" id="headerTitle">Ride Defied</h1>
+      <p id="headerDescrip">Save your noggin AND and your ride <span id="logo"></span</p> </div> <!-- A row containing
+            both the search criteria and map area -->
           <div class="row">
-            <form class="col-md-5 border border-primary" id="textEntry">
-              <p class="descrip">We start by populating Bike Incidents based on your location.</p>
+            <form class="col-md-3 border border-primary" id="textEntry">
+              <p class="descrip">We begin by searching our bike incident database from your current location.</p>
 
-  
-              <p class="descrip">Want to check out another city / state? Enter the details below for a new search.</p>
+              <div>
+                <hr class="dashLine>">
+              </div>
 
-              <!-- Search Criteria form -->
-              <!-- <div class="form-group">
-                <label for="text">State</label>
-                <input type="text" class="form-control" id="stateEntr" placeholder="Enter State to Search">
-              </div> -->
+              <p class="descrip">Start a new search by City.</p>
+
+              <!-- Search Criteria form 1 -->
               <div class="form-group">
                 <label for="text">City</label>
-                <input type="text" class="form-control" id="cityEntr" placeholder="Enter State to Search">
+                <input type="text" class="form-control" id="cityEntr" placeholder="Enter City to Search">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlSelect1">Type of Incident</label>
+                <label for="incident">Type of Incident</label>
                 <select class="form-control" id="bikeIncidPull">
                   <option>Accidents</option>
                   <option>Thefts</option>
@@ -70,64 +69,106 @@
               </div>
 
               <button type="submit" class="btn btn-primary">Submit</button>
-              
-            </form>
 
+            </form>
+            <br></br>
+
+            <!-- Here's a one column spacer between the Search Criteria form and the map -->
             <div class="col-md-1" id="tableSpace"></div>
 
-            <!-- Here's the map area -->
-            <div class="col-md-6 border border-primary" id="map">Here's the Map Area</div>
+            <!-- Here's the map area on the same row as the Search Criteria form -->
+            <div class="col-md-8 border border-primary" id="map">Here's the Map Area</div>
 
           </div>
-    </div>
 
-    <!-- Footer section -->
-    <footer class="bd-footer text-muted">
-      <div class="container-fluid p-0.5 p-md-0.5" id="footContainer">
+          <!-- A new row with Data Entry form 2 -->
+          <div class="row">
+            <form class="col-md-3 border border-primary" id="dataEntry">
 
-        <!-- Links to bike info sites -->
-        <div class="row" id="parentFooter">
-          <div id="footerText">Check out these recommended sites for bike tips, safety, and more.</div>
-        </div>
-        <div class="row" id="footerLinks">
-          <div class=col-md-2>
-            <ul><a href="https://www.traillink.com/" target="_blank">Trail Link</a></ul>
+              <p class="descrip">Add your experience to our community.</p>
+
+              <div class="form-group">
+                <label for="text">Address</label>
+                <input type="text" class="form-control" id="addressAdd" placeholder="Enter Address">
+              </div>
+
+              <div class="form-group">
+                <label for="text">City</label>
+                <input type="text" class="form-control" id="cityAdd" placeholder="Enter City to Search">
+              </div>
+              <div class="form-group">
+                <label for="Incident Type">Type of Incident</label>
+                <select class="form-control" id="bikeIncidAdd">
+                  <option>Accidents</option>
+                  <option>Thefts</option>
+                  <option>Hazards</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="dataDescription">Incident Description</label>
+                <textarea class="form-control" id="descriptionAdd" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+              <!-- Here's a one column spacer between the Data Entry form and the Data Return area -->
+              <div class="col-md-1" id="tableSpace"></div>
+
+              <!-- Here's the Data return area on the same row as the Data Entry form  -->
+              <div class="col-md-8 border border-primary" id="dataReturn">Here's the Data</div>
+
           </div>
 
-          <div class=col-md-2>
-            <ul><a href="https://www.bicycling.com/" target="_blank">Bicycling.com</a></ul>
-          </div>
+          <!-- Footer section -->
+          <footer class="bd-footer text-muted">
+            <div class="container-fluid p-0.5 p-md-0.5" id="footContainer">
 
-          <div class=col-md-2>
-            <ul><a href="https://peopleforbikes.org/" target="_blank">People For Bikes</a></ul>
-          </div>
+              <!-- Links to bike info sites -->
+              <div class="row" id="parentFooter">
+                <div id="footerText">Check out these recommended sites for bike tips, safety, and more.</div>
+              </div>
+              <div class="row" id="footerLinks">
+                <div class=col-md-2>
+                  <ul><a href="https://www.traillink.com/" target="_blank">Trail Link</a></ul>
+                </div>
 
-          <div class=col-md-2>
-            <ul><a href="https://www.singletracks.com/" target="_blank">Single Tracks</a></ul>
-          </div>
+                <div class=col-md-2>
+                  <ul><a href="https://www.bicycling.com/" target="_blank">Bicycling.com</a></ul>
+                </div>
 
-          <div class=col-md-2>
-            <ul><a href="https://www.ilovebicycling.com/" target="_blank">i love bicycling</a></ul>
-          </div>
+                <div class=col-md-2>
+                  <ul><a href="https://peopleforbikes.org/" target="_blank">People For Bikes</a></ul>
+                </div>
 
-          <div class=col-md-2>
-            <ul><a href="https://www.nsc.org/home-safety/tools-resources/seasonal-safety/summer/bicycles"
-                target="_blank">Nat'l Safety Council</a></ul>
-          </div>
+                <div class=col-md-2>
+                  <ul><a href="https://www.singletracks.com/" target="_blank">Single Tracks</a></ul>
+                </div>
 
-          <div class="row mx-auto" id="parentFooter">
-            <div id="footerLowText">Designed and built with care by &copy FrontRow Productions.</div>
-          </div>
+                <div class=col-md-2>
+                  <ul><a href="https://www.ilovebicycling.com/" target="_blank">i love bicycling</a></ul>
+                </div>
 
-        </div>
-      </div>
+                <div class=col-md-2>
+                  <ul><a href="https://www.nsc.org/home-safety/tools-resources/seasonal-safety/summer/bicycles"
+                      target="_blank">Nat'l Safety Council</a></ul>
+                </div>
 
-    </footer>
-    <script src="assets/cbear.js"></script>
-  
-    <!-- google maps api -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR7bEyrLJ0kZrXhsGobwdMC13RPuNtdZ8&callback=initMap"
-      async defer></script>
+                <div class="row mx-auto" id="parentFooter">
+                  <div id="footerLowText">Designed and built with care by &copy FrontRow Productions.</div>
+                </div>
+
+              </div>
+            </div>
+
+          </footer>
+          <script src="assets/cbear.js"></script>
+
+          <!-- google maps api -->
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR7bEyrLJ0kZrXhsGobwdMC13RPuNtdZ8&callback=initMap"
+            async defer></script>
 </body>
 
 </html>
