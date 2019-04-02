@@ -42,18 +42,20 @@
   <div id="container">
     <div class="jumbotron border border-primary" id="header">
       <h1 class="display-4" id="headerTitle">PureBred Head</h1>
-      <p id="headerDescrip">Save your  NOGGIN  and your  RIDE<span id="logo"></span</p> </div> 
-      
+      <p id="headerDescrip">Save your  NOGGIN, AND and your ride <span id="logo"></span</p> </div> 
         <!-- A row containing both the search criteria and map area -->
           <div class="row">
             <form class="col-md-5 border border-primary" id="textEntry">
               <p class="descrip">We start by populating Bike Incidents based on your location.</p>
-              <hr>
-              </hr>
 
-              <p class="descrip">Want to check out another city?  Enter the details below for a new search.</p>
+  
+              <p class="descrip">Want to check out another city / state? Enter the details below for a new search.</p>
 
               <!-- Search Criteria form -->
+              <!-- <div class="form-group">
+                <label for="text">State</label>
+                <input type="text" class="form-control" id="stateEntr" placeholder="Enter State to Search">
+              </div> -->
               <div class="form-group">
                 <label for="text">City</label>
                 <input type="text" class="form-control" id="cityEntr" placeholder="Enter State to Search">
@@ -68,7 +70,7 @@
               </div>
 
               <button type="submit" class="btn btn-primary">Submit</button>
-              <br></br>
+              
             </form>
 
             <div class="col-md-1" id="tableSpace"></div>
@@ -79,52 +81,53 @@
           </div>
     </div>
 
-  <!-- Footer section -->
-  <footer class="bd-footer text-muted">
-    <div class="container-fluid p-0.5 p-md-0.5" id="footContainer">
+    <!-- Footer section -->
+    <footer class="bd-footer text-muted">
+      <div class="container-fluid p-0.5 p-md-0.5" id="footContainer">
 
-      <!-- Links to bike info sites -->
-      <div class="row mx-auto" id="parentFooter">
-        <div id="footerText">Check out these recommended sites for bike tips, safety, and more.</div>
-      </div>
-      <div class="row" id="footerLinks">
+        <!-- Links to bike info sites -->
+        <div class="row" id="parentFooter">
+          <div id="footerText">Check out these recommended sites for bike tips, safety, and more.</div>
+        </div>
+        <div class="row" id="footerLinks">
+          <div class=col-md-2>
+            <ul><a href="https://www.traillink.com/" target="_blank">Trail Link</a></ul>
+          </div>
 
-        <div class=col-md-2>
-          <ul><a href="https://www.traillink.com/" target="_blank">Trail Link</a></ul>
-        </div>
-        
-        <div class=col-md-2>
-          <ul><a href="https://www.bicycling.com/" target="_blank">Bicycling.com</a></ul>
-        </div>
-        
-        <div class=col-md-2>
-          <ul><a href="https://peopleforbikes.org/" target="_blank">People For Bikes</a></ul>
-        </div>
-        
-        <div class=col-md-2>
-          <ul><a href="https://www.singletracks.com/" target="_blank">Single Tracks</a></ul>
-        </div>
-        
-        <div class=col-md-2>
+          <div class=col-md-2>
+            <ul><a href="https://www.bicycling.com/" target="_blank">Bicycling.com</a></ul>
+          </div>
+
+          <div class=col-md-2>
+            <ul><a href="https://peopleforbikes.org/" target="_blank">People For Bikes</a></ul>
+          </div>
+
+          <div class=col-md-2>
+            <ul><a href="https://www.singletracks.com/" target="_blank">Single Tracks</a></ul>
+          </div>
+
+          <div class=col-md-2>
             <ul><a href="https://www.ilovebicycling.com/" target="_blank">i love bicycling</a></ul>
+          </div>
+
+          <div class=col-md-2>
+            <ul><a href="https://www.nsc.org/home-safety/tools-resources/seasonal-safety/summer/bicycles"
+                target="_blank">Nat'l Safety Council</a></ul>
+          </div>
+
+          <div class="row mx-auto" id="parentFooter">
+            <div id="footerLowText">Designed and built with care by &copy FrontRow Productions.</div>
+          </div>
 
         </div>
-      
-        <div class=col-md-2>
-            <ul><a href="https://www.nsc.org/home-safety/tools-resources/seasonal-safety/summer/bicycles" target="_blank">Nat'l Safety Council</a></ul>
-        </div>
-
-        <div class="row mx-auto" id="parentFooter">
-          <div id="footerLowText">Designed and built with care by &copy FrontRow Productions.</div>
-        </div>
-
       </div>
-    </div>
+
     </footer>
     <script src="assets/cbear.js"></script>
+  
     <!-- google maps api -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR7bEyrLJ0kZrXhsGobwdMC13RPuNtdZ8&callback=initMap"
-    async defer></script>
+      async defer></script>
 </body>
 
 </html>

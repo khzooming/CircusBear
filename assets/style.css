@@ -11,8 +11,8 @@
     text-align: center;
     width: 100%;
     height: 130px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 14px;
+    padding-bottom: 22px;
     background: rgba(201, 175, 84, 0.4);
 }
 
@@ -24,28 +24,35 @@
 }
 
 .descrip {
-    font-size: 25px;
+    font-size: 18px;
     font-family: 'Avenir', Book; 
     line-height: 1.3;
-
 }
+
 
 #headerTitle {
     color: white;
     font-family: 'Monoton', cursive;
-    font-size: 48px;
+    font-size: 52px;
     line-height: 1.2;
 }
 
-
 #headerDescrip {
     font-family: 'Avenir', Book Oblique;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 1.2;
     text-align: center;
     color: white;
     font-style: italic;
 }
+
+
+/* #frontRow {
+    font-family: 'Monoton', cursive;
+    font-size: 10px;
+    text-align: right;
+    color: white;
+} */
 
 #logo {
     font-family: 'Monoton', cursive;
@@ -62,8 +69,8 @@
     display: inline-block;
     background: rgba(201, 175, 84, 0.4);
     color: white;
-    font-family: 'Indie Flower', cursive; 
-    font-size: 20px;
+    font-family: 'Avenir', Book Oblique;
+    font-size: 17px;
     height: 100px;
     width: 100%;
     line-height: 1.2;
@@ -72,22 +79,24 @@
 }
 
 #parentFooter {
-    line-height: 1.2;
     display: inline-block;
+    line-height: 1.2;
 }
 
 #footerText {
     display: inline-block;
-    font-family: 'Indie Flower', cursive; 
-    font-size: 20px;
+
+    font-family: 'Avenir', Book Oblique;
+    font-size: 17px;
     color: white;
     z-index: 2;
 }
 
 #footerLowText {
     display: inline-block;
-    font-family: 'Indie Flower', cursive; 
-    font-size: 20px;
+
+    font-family: 'Avenir', Book Oblique;
+    font-size: 17px;
     color: white;
     z-index: 2;
 }
