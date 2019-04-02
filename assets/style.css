@@ -85,6 +85,7 @@
 
 #footerText {
     display: inline-block;
+
     font-family: 'Avenir', Book Oblique;
     font-size: 17px;
     color: white;
@@ -93,6 +94,7 @@
 
 #footerLowText {
     display: inline-block;
+
     font-family: 'Avenir', Book Oblique;
     font-size: 17px;
     color: white;
@@ -120,11 +122,5 @@ font-family: 'Iceberg', cursive;
 font-family: 'Monoton', cursive;
 font-family: 'Indie Flower', cursive; */
 
-/* #bearPic {
-    height: 5%;
-    width: 5%;
-    background-repeat: repeat-x;
-    z-index: 1;
-} */
 
 
