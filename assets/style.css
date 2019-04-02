@@ -19,8 +19,27 @@
 #textEntry {
     background: rgba(201, 175, 84, 0.4);
     color: white;
-    font-size: 15px;
-    margin-bottom: 10px;
+    font-size: 13px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#dataEntry {
+    background: rgba(201, 175, 84, 0.4);
+    color: white;
+    font-size: 13px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#dataReturn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(201, 175, 84, 0.4);
+    color: white;
+    margin: 15px 0 15px;
 }
 
 .descrip {
@@ -28,7 +47,6 @@
     font-family: 'Avenir', Book; 
     line-height: 1.3;
 }
-
 
 #headerTitle {
     color: white;
@@ -46,14 +64,6 @@
     font-style: italic;
 }
 
-
-/* #frontRow {
-    font-family: 'Monoton', cursive;
-    font-size: 10px;
-    text-align: right;
-    color: white;
-} */
-
 #logo {
     font-family: 'Monoton', cursive;
     font-size: 25px;
@@ -63,6 +73,44 @@
     height: 400px;
     width: 100%; 
 }
+
+/* hr.dashLine {
+    /* border-top: 10px dashed  #1a1aff; */
+    /* border: 0;
+    clear: both;
+    display: block;
+    width: 96%;
+    background-color: #1a1aff;
+    height: 1px;
+    opacity: 1.0 !important;
+    z-index: 2;
+} */ */
+
+
+#cityEntr {
+    background-color: #E8EAE4;
+}
+
+#bikeIncidPull {
+    background-color: #E8EAE4;
+}
+
+#addressAdd {
+    background-color: #E8EAE4;
+}
+
+#cityAdd {
+    background-color: #E8EAE4;
+}
+
+#bikeIncidAdd {
+    background-color: #E8EAE4;
+}
+
+#descriptionAdd {
+    background-color: #E8EAE4;
+}
+
 
 #footContainer {
     text-align: center;
